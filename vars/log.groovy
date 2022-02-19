@@ -1,3 +1,5 @@
+import at.gardeners.Logger
+
 def call (LinkedHashMap<String,String>config=[:]) {
   if (config.containsKey('message')) {
     info(config['message'])

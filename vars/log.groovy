@@ -1,9 +1,11 @@
 import at.gardeners.MarkLogger
 
 def call (LinkedHashMap<String,String>config=[:]) {
+  def logger = new MarkLogger()
+  logger.debug('class')
   println ("[dbg]:start")
   if (config.containsKey('message')) {
-    def logger = new MarkLogger()
+
     logger.start();
     logger.stop();
   }

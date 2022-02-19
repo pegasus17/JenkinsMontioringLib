@@ -1,6 +1,6 @@
 package at.gardeners
 
-class MarkLogger {
+public class MarkLogger {
   static String mark = '§'
 
   def debug(String message) {

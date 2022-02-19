@@ -10,6 +10,7 @@ def call (LinkedHashMap<String,String>config=[:]) {
     logger.stop();
   }
   println ("[dbg]:end")
+  println "ELAPSED TIME: ${currentBuild.rawBuild.getTimestampString()}"
 }
 
 def info(message) {

@@ -1,8 +1,10 @@
-import at.gardeners.Logger
+import at.gardeners.MarkLogger
 
 def call (LinkedHashMap<String,String>config=[:]) {
   if (config.containsKey('message')) {
-    info(config['message'])
+    def logger = new MarkLogger()
+    logger.start();
+    logger.stop();
   }
 }
 
